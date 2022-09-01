@@ -17,9 +17,9 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item"><a className="nav-link" href="../../public/index.html">Inicio</a></li>
-              <li className="nav-item"><a className="nav-link" href="">Nosotros</a></li>
-              <li className="nav-item"><a className="nav-link" href="">Menu</a></li>
-              <li className="nav-item"><a className="nav-link" href="">Contacto</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Nosotros</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Menu</a></li>
+              <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
             </ul>
           </div>
           <CartWidget />
