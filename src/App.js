@@ -1,12 +1,12 @@
 import './styles/style.css';
 import NavBar from './components/NavBar';
-import Contenido from './components/Contenido'
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Contenido />
+      <ItemListContainer titulo="Tacos Regios" slogan="El sabor del Norte"/>
     </div>
   );
 }
