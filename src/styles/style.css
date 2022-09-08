@@ -20,19 +20,29 @@
     text-align: center;
 }
 
-.film{
-    display: block;
-    width: 300px;
+.taco{
+    /* display: block; */
+    /* display: flex; */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    /* width: 300px; */
+    /* align-content: center; */
+    width: 50%;
 }
 
-.film img{
-    width: 100%;
-    height: 100%;
+/* .taco img{
+    width: 30rem;
+    height:24rem;
     object-fit: cover;
+} */
+
+.precioLetra{
+    font-weight: bold;
 }
 
-.tacoImagenes{
-    width: 550px;
-    height: 410px;
-}
-
+/* .botonCarrito{
+    display: flex;
+    align-content: center;
+    align-items: center;
+} */
