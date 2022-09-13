@@ -11,7 +11,6 @@ const Item = ({info}) =>{
         <a href="#" className="btn btn-primary mx-auto" >Agregar al Carrito</a>
     </div>
 </div>
-
     );
 }
 

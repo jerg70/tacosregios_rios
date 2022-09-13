@@ -41,6 +41,11 @@
     font-weight: bold;
 }
 
+.tacoIndividual{
+    margin-left:40%;
+    margin-top: 3%;
+}
+
 /* .botonCarrito{
     display: flex;
     align-content: center;
