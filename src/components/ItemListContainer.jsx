@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ItemList from "./ItemList";
 import { tacos } from "./mock/tacos";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = (props) => {
 
@@ -18,14 +19,21 @@ const ItemListContainer = (props) => {
 
     const [info, setInfo] = useState([]);
 
+    const {categoryId} = useParams();
+
     useEffect(() => {
         const getInfo = new Promise (resolve => {
             setTimeout(() => {
                 resolve(tacos);
             },2000);
         });
-        getInfo.then(res => setInfo(res));
-    },[]);
+        if (categoryId) {
+            getInfo.then(res => setInfo(res.filter(taco => taco.category === categoryId)));
+
+        }else{
+            getInfo.then(res => setInfo(res));
+        }
+    },[categoryId]);
 
     return(
         <div>
