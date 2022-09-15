@@ -16,7 +16,7 @@ function App() {
         <Route path='/categoria/:categoryId' element={<ItemListContainer titulo="Tacos Regios" slogan="El sabor del Norte"/>} />
         <Route path='/nosotros' element={<Nosotros/>} />
         <Route path='/cart' element={<Cart />} />
-        <Route path='/detalle/itemId' element={<ItemDetailContainer />} />
+        <Route path='/detalle/:itemId' element={<ItemDetailContainer />} />
       </Routes>
     </BrowserRouter>  
     </div>
