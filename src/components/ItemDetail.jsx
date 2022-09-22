@@ -18,7 +18,8 @@ const ItemDetail = ({item}) => {
             <h2>{item.title}</h2>
             <p className="card-text">{item.description}</p>
             <h3>${item.price}</h3>
-            {cart ? <Link to='/cart'><p className="animate__animated animate__heartBeat animate__repeat-3">Terminar mi Compra</p></Link> : <ItemCount numInit={1} stock={10} onAdd={onAdd}/>}
+            {cart ? <Link to='/cart'><p className="animate__animated animate__heartBeat animate__repeat-3">Terminar mi Compra</p></Link> 
+            : <ItemCount numInit={1} stock={10} onAdd={onAdd}/>}
         </div>
         </div>
     );
