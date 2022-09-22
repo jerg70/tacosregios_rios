@@ -1,13 +1,16 @@
 import ItemCount from "./ItemCount";
+import { useCartContext } from "../context/CartContext";
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import 'animate.css';
 
 const ItemDetail = ({item}) => {
     const[cart,setCart] = useState(false);
+    const {addProduct} = useCartContext();
 
     const onAdd = (cantidad) =>{
         setCart(true);
+        addProduct(item,cantidad);
     }
 
     console.log("prueba item detail");

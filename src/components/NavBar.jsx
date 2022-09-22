@@ -9,7 +9,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark col-lg-12 col-md-12 col-sm-12">
 
           <div className="container-fluid">
-          <NavLink href="../../public/index.html">
+          <NavLink to='/'>
                     <img src="../../media/taqueria_Logo.png" alt="Tacos Regios Logo" className="navbar-brand logoTacos"/>
                 </NavLink>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 

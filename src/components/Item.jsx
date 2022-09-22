@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Item = ({info}) =>{
+    // const nombre = useContext(useCartContext);
+    // console.log('item',nombre);
     return(
 <div className="col-lg-3 col-md-6 col-sm-12 card taco">
   <img className="card-img-top" src={info.pictureurl} alt="Imagen de taco"/>
